@@ -20,6 +20,8 @@ npm install # or yarn
 npm run dev
 ```
 
+The build process is very slow because tailwind basically pumps out every style in its library. So don't worry if the `dev` or `build` scripts take a while. _Do_ worry if you actually decide to develop like this because you won't get any work done.
+
 ## In an existing project
 
 Svelte expects the CSS that it processes during compilation to be normal CSS, so if we want to use CSS processors we need to perform these transforms using `svelte.preprocess`. This way, they're all done before Svelte knows anything weird is happening.
